@@ -37,131 +37,124 @@
     </nav>
   </header>
   <main class="container">
-    <section class="container__reviews reviews">
-      <h2 class="visually-hidden">Отзывы.</h2>
-      <p class="reviews__text">Оставьте свой отзыв</p>
-      <p class="reviews__causes">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами
-        достопримечательностях</p>
-    </section>
+    <div class="container__logo logo">
+    </div>
     <section class="form-container">
-      <fieldset class="form-container__appointment-full-name appointment-full-name">
-        <legend class="appointment-full-name__appointment-title">Представьтесь:</legend>
-        <form class="appointment-full-name__appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="appointment-full-name__appointment-name">
-            <label class="form-label" for="appointment-name">Имя:</label>
-            <input class="field" type="text" id="appointment-name" name="appointment-name" placeholder="Пётр">
+      <form class="form-container__form form" action="https://echo.htmlacademy.ru/" method="post">
+        <h1 class="visually-hidden">Отзывы.</h1>
+        <p class="form__text">Оставьте свой отзыв</p>
+        <p class="form__causes">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных
+          вами
+          достопримечательностях</p>
+        <fieldset class="form__full-name full-name">
+          <legend class="full-name__title">Представьтесь:</legend>
+          <label class="form-label" for="name">Имя:</label>
+          <input class="field" type="text" id="name" name="name" placeholder="Пётр">
+          <p class="full-name__surname">
+            <label class="form-label" for="surname">Фамилия:</label>
+            <input class="field" type="text" id="surname" name="surname" placeholder="Пустота">
           </p>
-          <p class="appointment-full-name__appointment-surname">
-            <label class="form-label" for="appointment-surname">Фамилия:</label>
-            <input class="field" type="text" id="appointment-surname" name="appointment-surname" placeholder="Пустота">
-          </p>
-          <p class="appointment-full-name__appointment-patronymic">
-            <label class="form-label" for="appointment-patronymic">Отчество:</label>
-            <input class="field" type="text" id="appointment-patronymic" name="appointment-patronymic"
+          <p class="full-name__patronymic">
+            <label class="form-label" for="patronymic">Отчество:</label>
+            <input class="field" type="text" id="patronymic" name="patronymic"
               placeholder="Викторович">
           </p>
-        </form>
-      </fieldset>
-      <fieldset class="form-container__appointment-Information appointment-Information">
-        <legend class="appointment-Information__appointment-title">Контактная информация:</legend>
-        <form class="appointment-Information__appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="appointment-contact-Information__appointment-contact">
-            <label class="form-label" for="appointment-contact">Контактный телефон:</label>
-            <input class="field" type="text" id="appointment-contact" name="appointment-contact"
-              placeholder="Введите телефон">
-          </p>
-          <p class="appointment-contact-Information__appointment-form-email">
-            <label class="form-label" for="appointment-form-email">Электронная почта:</label>
-            <input class="field" type="text" id="appointment-form-email" name="appointment-form-email"
+        </fieldset>
+        <fieldset class="form__information information">
+          <legend class="information__title">Контактная информация:</legend>
+          <label class="form-label" for="contact">Контактный телефон:</label>
+          <input class="field" type="tel" id="contact" name="contact"
+            placeholder="Введите телефон">
+          <p class="Information__email">
+            <label class="form-label" for="email">Электронная почта:</label>
+            <input class="field" type="email" id="email" name="email"
               placeholder="Введите e-mail">
           </p>
-        </form>
-      </fieldset>
-      <fieldset class="form-container__impression impression">
-        <legend class="impression__impression-title">Ваше общее впечатление:</legend>
-        <ul class="impression__list">
-          <li class="impression__item">
-            <label class="impression__control control">
-              <input class="visually-hidden control-input control-input-checkbox" type="radio" name="type"
-                value="positively" checked />
-              <span class="control-mark"></span>
-              <span class="control-label">
-                Скорее положительное
-              </span>
-            </label>
-          </li>
-          <li class="impression__item">
-            <label class="impression__control control">
-              <input class="visually-hidden control-input control-input-checkbox" type="radio" name="type"
-                value="negative" />
-              <span class="control-mark"></span>
-              <span class="control-label">
-                Скорее отрицательное
-              </span>
-            </label>
-          </li>
-          <li class="impression__item">
-            <label class="impression__control control">
-              <input class="visually-hidden control-input control-input-checkbox" type="radio" name="type"
-                value="difficulty" />
-              <span class="control-mark"></span>
-              <span class="control-label">
-                Затрудняюсь ответить
-              </span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form-container__attraction attraction">
-        <legend class="attraction__title">Посещенные достопримечательности:</legend>
-        <ul class="attraction__list">
-          <li class="attraction__item">
-            <label class="attraction__control control">
-              <input class="visually-hidden control-input" type="checkbox" name="bridge" checked />
-              <span class="control-mark"></span>
-              <span class="control-label">
-                Мост дьявола
-              </span>
-            </label>
-          </li>
-          <li class="attraction__item">
-            <label class="attraction__control control">
-              <input class="visually-hidden control-input" type="checkbox" name="mountain" checked />
-              <span class="control-mark"></span>
-              <span class="control-label">
-                Гора-Колокол
-              </span>
-            </label>
-          </li>
-          <li class="attraction__item">
-            <label class="attraction__control control">
-              <input class="visually-hidden control-input" type="checkbox" name="the park" checked />
-              <span class="control-mark"></span>
-              <span class="control-label">
-                Слайд-парк
-              </span>
-            </label>
-          </li>
-          </li>
-          <li class="attraction__item">
-            <label class="attraction__control control">
-              <input class="visually-hidden control-input" type="checkbox" name="rocks" />
-              <span class="control-mark"></span>
-              <span class="control-label">
-                Красные скалы
-              </span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="form-container__description description">
-        <legend class="description__title">Опишите свои эмоции:</legend>
-        <form class="description__form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="field">Описание эмоций.</label>
-          <input class="field" placeholder="Опишите подробно все свои восторги" id="email-field" required>
-        </form>
-      </fieldset>
-      <button class="form-container__button" type="submit">Отправить отзыв</button>
+        </fieldset>
+        <fieldset class="form__impression impression">
+          <legend class="impression__impression-title">Ваше общее впечатление:</legend>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <label class="impression__control control">
+                <input class="visually-hidden control-input control-input-checkbox" type="radio" name="type"
+                  value="positively" checked />
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Скорее положительное
+                </span>
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control control">
+                <input class="visually-hidden control-input control-input-checkbox" type="radio" name="type"
+                  value="negative" />
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Скорее отрицательное
+                </span>
+              </label>
+            </li>
+            <li class="impression__item">
+              <label class="impression__control control">
+                <input class="visually-hidden control-input control-input-checkbox" type="radio" name="type"
+                  value="difficulty" />
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Затрудняюсь ответить
+                </span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__attraction attraction">
+          <legend class="attraction__title">Посещенные достопримечательности:</legend>
+          <ul class="attraction__list">
+            <li class="attraction__item">
+              <label class="attraction__control control">
+                <input class="visually-hidden control-input" type="checkbox" name="bridge" checked />
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Мост дьявола
+                </span>
+              </label>
+            </li>
+            <li class="attraction__item">
+              <label class="attraction__control control">
+                <input class="visually-hidden control-input" type="checkbox" name="mountain" checked />
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Гора-Колокол
+                </span>
+              </label>
+            </li>
+            <li class="attraction__item">
+              <label class="attraction__control control">
+                <input class="visually-hidden control-input" type="checkbox" name="the park" checked />
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Слайд-парк
+                </span>
+              </label>
+            </li>
+            <li class="attraction__item">
+              <label class="attraction__control control">
+                <input class="visually-hidden control-input" type="checkbox" name="rocks" />
+                <span class="control-mark"></span>
+                <span class="control-label">
+                  Красные скалы
+                </span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="form__description description">
+          <h2 class="description__title">Опишите свои эмоции:</h2>
+          <label class="visually-hidden" for="text-field">Описание эмоций.</label>
+          <textarea class="field" placeholder="Опишите подробно все свои восторги" name="text-field"
+            id="text-field"></textarea>
+        </div>
+        <button class="form__button" type="submit">Отправить отзыв</button>
+      </form>
     </section>
   </main>
   <footer class="main-footer">
