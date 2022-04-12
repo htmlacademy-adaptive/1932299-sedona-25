@@ -10,69 +10,68 @@
 <body class="page-body">
   <header class="main-header">
     <div class="main-header__button">
-      <button class="button-toogle" type="button">
+      <button class="main-header__button-toogle" type="button">
         <span class="visualy-hidden">Открыть меню.</span>
       </button>
+      <a class="main-header__logo">
+        <img src="img/logo.svg" width="185" height="96" alt="Логотип">
+      </a>
     </div>
-    <a class="main-header__logo">
-      <img src="img/logo.svg" width="185" height="96" alt="Логотип">
-    </a>
     <nav class="main-header__main-nav main-nav">
-      <div class="main-nav__container">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a>Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a>Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a>HTML academy</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current">
+          <a class="main-nav__item--link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--link">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--link">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--link">HTML academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="container">
     <div class="container__logo logo">
     </div>
     <section class="form-container">
+      <h1 class="visually-hidden">Отзывы.</h1>
+      <p class="form__text">Оставьте свой отзыв</p>
+      <p class="form__causes">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных
+        вами
+        достопримечательностях</p>
       <form class="form-container__form form" action="https://echo.htmlacademy.ru/" method="post">
-        <h1 class="visually-hidden">Отзывы.</h1>
-        <p class="form__text">Оставьте свой отзыв</p>
-        <p class="form__causes">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных
-          вами
-          достопримечательностях</p>
-        <fieldset class="form__full-name full-name">
-          <legend class="full-name__title">Представьтесь:</legend>
-          <label class="form-label" for="name">Имя:</label>
-          <input class="field" type="text" id="name" name="name" placeholder="Пётр">
-          <p class="full-name__surname">
+        <fieldset class="form__full-name">
+          <legend class="form__title--full-name">Представьтесь:</legend>
+          <p class="full-name__form-wrapper">
+            <label class="form-label" for="name">Имя:</label>
+            <input class="field" type="text" id="name" name="name" placeholder="Пётр">
+          </p>
+          <p class="full-name__form-wrapper">
             <label class="form-label" for="surname">Фамилия:</label>
             <input class="field" type="text" id="surname" name="surname" placeholder="Пустота">
           </p>
-          <p class="full-name__patronymic">
+          <p class="full-name__form-wrapper">
             <label class="form-label" for="patronymic">Отчество:</label>
-            <input class="field" type="text" id="patronymic" name="patronymic"
-              placeholder="Викторович">
+            <input class="field" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
           </p>
         </fieldset>
-        <fieldset class="form__information information">
-          <legend class="information__title">Контактная информация:</legend>
-          <label class="form-label" for="contact">Контактный телефон:</label>
-          <input class="field" type="tel" id="contact" name="contact"
-            placeholder="Введите телефон">
-          <p class="Information__email">
+        <fieldset class="form__information">
+          <legend class="form__title--information">Контактная информация:</legend>
+          <p class="information__form-wrapper">
+            <label class="form-label" for="contact">Контактный телефон:</label>
+            <input class="field" type="tel" id="contact" name="contact" placeholder="Введите телефон">
+          </p>
+          <p class="information__form-wrapper">
             <label class="form-label" for="email">Электронная почта:</label>
-            <input class="field" type="email" id="email" name="email"
-              placeholder="Введите e-mail">
+            <input class="field" type="email" id="email" name="email" placeholder="Введите e-mail">
           </p>
         </fieldset>
-        <fieldset class="form__impression impression">
-          <legend class="impression__impression-title">Ваше общее впечатление:</legend>
+        <fieldset class="form__impression">
+          <legend class="form__title--impression">Ваше общее впечатление:</legend>
           <ul class="impression__list">
             <li class="impression__item">
               <label class="impression__control control">
@@ -106,8 +105,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__attraction attraction">
-          <legend class="attraction__title">Посещенные достопримечательности:</legend>
+        <fieldset class="form__attraction">
+          <legend class="form__title--attraction">Посещенные достопримечательности:</legend>
           <ul class="attraction__list">
             <li class="attraction__item">
               <label class="attraction__control control">
@@ -148,8 +147,7 @@
           </ul>
         </fieldset>
         <div class="form__description description">
-          <h2 class="description__title">Опишите свои эмоции:</h2>
-          <label class="visually-hidden" for="text-field">Описание эмоций.</label>
+          <label class="form__description-title" for="text-field">Опишите свои эмоции:</label>
           <textarea class="field" placeholder="Опишите подробно все свои восторги" name="text-field"
             id="text-field"></textarea>
         </div>
