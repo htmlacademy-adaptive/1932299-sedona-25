@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -13,7 +14,7 @@
         <span class="visualy-hidden">Открыть меню.</span>
       </button>
       <a class="main-header__logo">
-        <img src="img/logo.svg" width="185" height="96" alt="Логотип">
+        <img src="img/mobile-logo.svg" width="185" height="96" alt="Логотип">
       </a>
     </div>
     <nav class="main-header__main-nav main-nav">
@@ -36,6 +37,8 @@
   <main class="main-container">
     <section class="main-container__intro">
       <h1 class="visualy-hidden">Туристический городок-Седона.</h1>
+      <img class="main-container__intro-image" src="img/mobile-index.svg" width="282" height="214"
+          alt="welcome to the gorgeous SEDONA">
     </section>
     <section class="main-container__reasons reasons">
       <h2 class="visually-hidden">Причины.</h2>
@@ -48,7 +51,7 @@
             <span class="reasons__numbering">- №1 -</span>
             <p class="reasons__subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img src="" width="" height="" alt="Архитектура города.">
+          <img src="img/mobile-city.jpg" width="320" height="260" alt="Архитектура города.">
           <ul class="reasons__advantages advantages">
             <li class="advantages__item advantages__item--housing">
               <h4 class="advantages__title">Жилье</h4>
@@ -66,7 +69,7 @@
           </ul>
         </li>
         <li class="reasons__item reasons__item--bridge">
-          <img src="" width="" height="" alt="Каньоны.">
+          <img src="img/mobile-bridge.jpg" width="320" height="260" alt="Каньоны.">
           <div class="reasons__intro">
             <h3 class="reasons__heading">Там есть<br> мост дьявола</h3>
             <span class="reasons__numbering">- №2 -</span>
@@ -94,10 +97,11 @@
       <h2 class="appointment__heading">Заинтересовались?</h2>
       <p class="appointment__dates">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
         гостиниц в Седоне</p>
-      <a class="appointment__button" href="#">Поиск гостинницы в Седоне</a>
+      <a class="appointment__button" href="#">Найти гостиницу</a>
     </section>
     <section class="main-container__map map">
       <div class="map__location">
+        <img src="img/map-mobile.jpg.jpg" width="320" height="350" alt="Карта">
       </div>
     </section>
   </main>
@@ -116,7 +120,9 @@
     </ul>
     <div class="main-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="main-footer__logo" src="img/footer-logo.svg" width="27" height="34"
+      alt="Логотип."></a>
     </div>
   </footer>
 </body>
