@@ -1,0 +1,229 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  height: 100%;
+  font-family: "PT Sans Narrow", "Tahoma", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.main-header {
+  display: block;
+}
+.main-nav {
+  position: relative;
+  height: 56px;
+  width: 100%;
+}
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-container__intro {
+  background-image: url("../img/mobile-background.jpg");
+  background-repeat: no-repeat;
+}
+.reasons {
+  width: 320px;
+  text-align: center;
+}
+.reasons__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reasons__intro {
+  background-color: #81b3d2;
+  height: 211px;
+}
+.reasons__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.reasons__causes {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.reasons__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.reasons__subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.advantages__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.advantages__subtitle {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.appointment {
+  display: block;
+  width: 320px;
+  text-align: center;
+}
+.appointment__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.appointment__dates {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.appointment__button {
+  padding: 16px 49px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: hsl(203, 47%, 66%);
+  text-decoration: none;
+}
+.main-footer__hashtag {
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  padding-left: 76px;
+}
+.social__item {
+  list-style: none;
+}
+.copyright__text {
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 80px;
+}
+.gallery__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gallery__item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.gallery__item-like-amount {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form__item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.form__label {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.form__full-name {
+  border: none;
+}
+.form__information {
+  border: none;
+}
+.form__impression {
+  border: none;
+}
+.form__attraction {
+  border: none;
+}
+.form__field {
+  background-color: #f2f2f2;
+  padding: 16px 0 16px 16px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+input::placeholder {
+  color: #000000;
+}
+.form__description-field {
+  font-family: inherit;
+  background-color: #f2f2f2;
+  padding: 16px;
+  width: 279px;
+  min-height: 150px;
+  border: none;
+}
+.form__description-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.form__button {
+  font-family: inherit;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 18px 33px 13px 33px;
+  border: none;
+}
+.form-container__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.form-container__causes {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/*# sourceMappingURL=style.css.map */
