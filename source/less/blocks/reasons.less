@@ -17,11 +17,18 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    width: 33%;
+  }
 }
 
 .reasons__intro {
   background-color: #81b3d2;
   height: 211px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .reasons__text {
@@ -31,6 +38,8 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
+  padding-top: 32px;
 }
 
 .reasons__causes {
@@ -47,6 +56,8 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  padding-top: 33px;
+  margin-bottom: 11px;
 }
 
 .reasons__subtitle {
@@ -54,4 +65,12 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+}
+
+.reasons__images {
+  display: block;
+
+  @media (min-width: 768px) {
+    width: 66%;
+  }
 }

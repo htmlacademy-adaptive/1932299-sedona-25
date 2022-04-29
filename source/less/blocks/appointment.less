@@ -10,6 +10,8 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-bottom: 39px;
+  padding-top: 39px;
 }
 
 .appointment__dates {
@@ -17,13 +19,15 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-bottom: 39px;
 }
 
 .appointment__button {
   display: block;
   width: 284px;
   margin: 0 auto;
-  padding: 16px 15px;
+  margin-bottom: 42px;
+  padding: 16px 13px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -31,4 +35,8 @@
   color: #ffffff;
   background-color: #81b3d2;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    width: 59%;
+  }
 }
