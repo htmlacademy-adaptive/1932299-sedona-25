@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <base href="https://htmlacademy-adaptive.github.io/1932299-sedona-25/8/">
@@ -12,7 +13,7 @@
   <header class="main-header">
     <div class="main-header__button">
       <button class="main-header__button-toogle" type="button">
-        <span class="visualy-hidden">Открыть меню.</span>
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
       <a class="main-header__logo">
         <img src="img/mobile-logo.svg" width="185" height="96" alt="Логотип">
@@ -37,14 +38,16 @@
   </header>
   <main class="main-container">
     <section class="main-container__intro">
-      <h1 class="visualy-hidden">Туристический городок-Седона.</h1>
+      <h1 class="visually-hidden">Туристический городок-Седона.</h1>
       <img class="main-container__intro-image" src="img/mobile-index.svg" width="282" height="214"
           alt="welcome to the gorgeous SEDONA">
     </section>
     <section class="main-container__reasons reasons">
+      <div class="reasons__welcome container">
       <h2 class="visually-hidden">Причины.</h2>
       <p class="reasons__text">Седона — не большой городок в Аризоне, заслуживающий большего!</p>
       <p class="reasons__causes">Рассмотрим 5 причин, по которым Седона лучше, чем Гранд-Каньон!</p>
+      </div>
       <ul class="reasons__list">
         <li class="reasons__item reasons__item--city">
           <div class="reasons__intro">
@@ -52,8 +55,8 @@
             <span class="reasons__numbering">- №1 -</span>
             <p class="reasons__subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img src="img/mobile-city.jpg" width="320" height="260" alt="Архитектура города.">
-          <ul class="reasons__advantages advantages">
+          <a class="reasons__images"><img src="img/mobile-city.jpg" width="320" height="260" alt="Архитектура города."></a>
+          <ul class="reasons__advantages advantages container">
             <li class="advantages__item advantages__item--housing">
               <h4 class="advantages__title">Жилье</h4>
               <p class="advantages__subtitle">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
@@ -70,7 +73,7 @@
           </ul>
         </li>
         <li class="reasons__item reasons__item--bridge">
-          <img src="img/mobile-bridge.jpg" width="320" height="260" alt="Каньоны.">
+          <a class="reasons__images"><img src="img/mobile-bridge.jpg" width="320" height="260" alt="Каньоны."></a>
           <div class="reasons__intro">
             <h3 class="reasons__heading">Там есть<br> мост дьявола</h3>
             <span class="reasons__numbering">- №2 -</span>
@@ -94,7 +97,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-container__appointment appointment">
+    <section class="main-container__appointment appointment container">
       <h2 class="appointment__heading">Заинтересовались?</h2>
       <p class="appointment__dates">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
         гостиниц в Седоне</p>
@@ -106,7 +109,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <a class="main-footer__hashtag" href="visitsedona">#VISITSEDONA</a>
     <ul class="main-footer__social social">
       <li class="social__item">
