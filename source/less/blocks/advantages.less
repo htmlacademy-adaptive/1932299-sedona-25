@@ -1,6 +1,15 @@
 .advantages {
   padding-top: 23px;
   padding-bottom: 52px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 242px 242px 242px;
+    row-gap: 0;
+    column-gap: 18px;
+    justify-items: center;
+    align-items: center;
+  }
 }
 
 .advantages__item {
@@ -10,10 +19,8 @@
   text-align: left;
 
   @media (min-width: 768px) {
-    display: inline-block;
     width: 31%;
     text-align: center;
-    padding: 15px 15px;
   }
 }
 
@@ -28,7 +35,6 @@
 }
 
 .advantages__subtitle {
-  display: block;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
