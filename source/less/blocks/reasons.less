@@ -14,13 +14,23 @@
 
   @media (min-width: 768px) {
     display: flex;
-    width: 33%;
+    flex-wrap: wrap;
   }
 }
 
 .reasons__intro {
   background-color: #81b3d2;
+  color: #ffffff;
   padding: 40px 20px;
+
+  @media (min-width: 768px) {
+    width: 33%;
+  }
+}
+
+.reasons__welcome {
+  padding-top: 32px;
+  padding-bottom: 16px;
 }
 
 .reasons__text {
@@ -31,7 +41,6 @@
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
-  padding-top: 32px;
 }
 
 .reasons__causes {
@@ -48,6 +57,12 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-bottom: 15px;
+}
+
+.reasons__numbering {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .reasons__subtitle {
@@ -57,10 +72,24 @@
   padding: 0;
 }
 
-.reasons__images {
+.reasons__image {
   display: block;
+  width: 100%;
 
   @media (min-width: 768px) {
     width: 66%;
+  }
+}
+
+.reasons__item--square,
+.reasons__item--road,
+.reasons__item--tourists {
+  background-color: #eeeeee;
+  padding: 26px 18px;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
   }
 }
