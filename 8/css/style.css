@@ -33,7 +33,6 @@ body {
 }
 img {
   max-width: 100%;
-  object-fit: contain;
 }
 .visually-hidden {
   position: absolute;
@@ -45,31 +44,48 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
 .main-header {
   display: block;
 }
-.main-header__button-toogle {
-  position: absolute;
+.main-header__button {
+  position: relative;
   top: 0;
   right: 20px;
 }
-.main-nav {
+.main-header__logo {
+  display: flex;
   position: relative;
-  height: 56px;
+  justify-content: center;
+}
+.main-nav {
+  position: absolute;
   width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .main-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.main-nav__item {
+.main-nav__item-link {
+  display: block;
   background-color: #81b3d2;
   color: #ffffff;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding: 17px 15px 12px 15px;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .main-container__intro {
   display: block;
@@ -78,7 +94,7 @@ img {
   background-size: cover;
   margin: 0 auto;
 }
-img {
+.main-container__intro-image {
   display: block;
   width: 100%;
 }
@@ -88,6 +104,13 @@ img {
 .reasons__list {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .reasons__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .reasons__item {
   list-style: none;
@@ -97,14 +120,24 @@ img {
 @media (min-width: 768px) {
   .reasons__item {
     display: flex;
-    width: 33%;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 .reasons__intro {
   background-color: #81b3d2;
-  height: 211px;
+  color: #ffffff;
+  padding: 40px 20px;
   width: 100%;
-  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .reasons__intro {
+    width: 33%;
+  }
+}
+.reasons__welcome {
+  padding-top: 32px;
+  padding-bottom: 16px;
 }
 .reasons__text {
   font-weight: 700;
@@ -114,7 +147,6 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
-  padding-top: 32px;
 }
 .reasons__causes {
   font-weight: 400;
@@ -129,8 +161,11 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-top: 33px;
-  margin-bottom: 11px;
+  margin-bottom: 15px;
+}
+.reasons__numbering {
+  display: block;
+  margin-bottom: 15px;
 }
 .reasons__subtitle {
   font-weight: 700;
@@ -138,12 +173,41 @@ img {
   margin: 0;
   padding: 0;
 }
-.reasons__images {
+.reasons__image {
   display: block;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  .reasons__images {
+  .reasons__image {
     width: 66%;
+  }
+}
+.reasons__item--square,
+.reasons__item--road,
+.reasons__item--tourists {
+  background-color: #eeeeee;
+  padding: 26px 18px;
+}
+@media (min-width: 768px) {
+  .reasons__item--square,
+  .reasons__item--road,
+  .reasons__item--tourists {
+    display: block;
+    width: 33%;
+  }
+}
+.advantages {
+  padding-top: 23px;
+  padding-bottom: 52px;
+}
+@media (min-width: 768px) {
+  .advantages {
+    display: grid;
+    grid-template-columns: 242px 242px 242px;
+    row-gap: 0;
+    column-gap: 18px;
+    justify-items: center;
+    align-items: center;
   }
 }
 .advantages__item {
@@ -154,7 +218,8 @@ img {
 }
 @media (min-width: 768px) {
   .advantages__item {
-    display: flex;
+    width: 31%;
+    text-align: center;
   }
 }
 .advantages__title {
@@ -173,9 +238,16 @@ img {
   padding: 0;
   margin-bottom: 22px;
 }
+@media (min-width: 768px) {
+  .advantages__subtitle {
+    margin: 0;
+  }
+}
 .appointment {
   display: block;
   text-align: center;
+  padding-top: 39px;
+  padding-bottom: 42px;
 }
 .appointment__heading {
   font-weight: 700;
@@ -184,8 +256,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 39px;
-  padding-top: 39px;
+  margin-bottom: 15px;
 }
 .appointment__dates {
   font-weight: 400;
@@ -198,7 +269,6 @@ img {
   display: block;
   width: 284px;
   margin: 0 auto;
-  margin-bottom: 42px;
   padding: 16px 13px;
   font-weight: 700;
   font-size: 18px;
@@ -213,7 +283,8 @@ img {
     width: 59%;
   }
 }
-img {
+.map__image {
+  display: block;
   width: 100%;
 }
 .main-footer__hashtag {
@@ -313,11 +384,5 @@ input::placeholder {
 .form-container__causes {
   font-weight: 400;
   text-transform: uppercase;
-}
-.container {
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-  max-width: 1200px;
 }
 /*# sourceMappingURL=style.css.map */
