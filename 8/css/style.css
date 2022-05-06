@@ -44,6 +44,17 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.page-container {
+  display: inline;
+}
+@media (min-width: 1200px) {
+  .page-container {
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 40px #e7e5e5;
+  }
+}
 .container {
   width: 100%;
   padding: 0 20px;
