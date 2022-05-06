@@ -1,3 +1,19 @@
 .main-header {
   display: block;
 }
+
+.main-header__button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.main-header__button-toogle--no-js {
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
