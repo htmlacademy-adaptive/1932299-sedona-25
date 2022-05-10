@@ -1,19 +1,39 @@
 .main-header {
   display: block;
-}
-
-.main-header__button {
-  display: flex;
-  position: relative;
-  justify-content: center;
+  width: 320px;
+  height: 56px;
+  background-color: #ffffff;
 }
 
 .main-header__button-toogle--no-js {
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 17px;
+  right: 17px;
+  z-index: 2;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: 768px) {
     display: none;
+  }
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 70px;
+
+  @media (min-width: 768px) {
+    left: 280px;
+  }
+
+  @media (min-width: 1200px) {
+    left: 500px;
   }
 }
