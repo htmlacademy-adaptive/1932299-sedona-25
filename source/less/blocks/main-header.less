@@ -1,11 +1,15 @@
 .main-header {
   display: block;
   width: 320px;
-  height: 56px;
+  min-height: 56px;
   background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
-.main-header__button-toogle--no-js {
+.main-header__button-toogle--closed {
   position: absolute;
   top: 17px;
   right: 17px;
@@ -15,6 +19,25 @@
   height: 22px;
   background-color: #ffffff;
   background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-header__button-toogle--opened {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  z-index: 2;
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #81b3d2;
+  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;

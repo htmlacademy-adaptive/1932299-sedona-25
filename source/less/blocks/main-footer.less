@@ -16,3 +16,39 @@
   line-height: 26px;
   text-decoration: none;
 }
+
+.social__link {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 0;
+  column-gap: 6px;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social__item {
+  display: flex;
+
+  &:nth-child(1) {
+    background-image: url("../img/social-vkontakte.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/social-telegram.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(3) {
+    background-image: url("../img/social-youtube.svg");
+    background-repeat: no-repeat;
+  }
+}
