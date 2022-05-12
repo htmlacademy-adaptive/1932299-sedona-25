@@ -1,7 +1,5 @@
 .main-header {
   display: block;
-  width: 320px;
-  min-height: 56px;
   background-color: #ffffff;
 
   @media (min-width: 768px) {
@@ -10,10 +8,19 @@
 }
 
 .main-header__button {
-  min-height: 56%;
+  min-height: 56px;
+
+  @media (min-width: 768px) {
+    min-height: 0;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 0;
+  }
 }
 
 .main-header__button-toogle {
+  background-color: transparent;
   position: absolute;
   top: 17px;
   right: 17px;
@@ -38,7 +45,6 @@
 .main-header__button-toogle--opened {
   width: 22px;
   height: 22px;
-  background-color: #81b3d2;
   background-image: url("../img/icon-cross.svg");
 
   @media (min-width: 768px) {
