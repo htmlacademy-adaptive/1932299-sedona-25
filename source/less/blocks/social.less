@@ -1,3 +1,39 @@
 .social__item {
+  display: flex;
   list-style: none;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  row-gap: 0;
+  column-gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  background-color: #81b3d2;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-top: 36px;
+  margin-bottom: 37px;
+}
+
+.social__link--vkontakte {
+  background-image: url("../img/social-vkontakte.svg");
+}
+
+.social__link--telegram {
+  background-image: url("../img/social-telegram.svg");
+}
+
+.social__link--youtube {
+  background-image: url("../img/social-youtube.svg");
 }

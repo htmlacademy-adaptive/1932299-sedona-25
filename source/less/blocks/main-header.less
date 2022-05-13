@@ -1,19 +1,64 @@
 .main-header {
   display: block;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .main-header__button {
-  display: flex;
-  position: relative;
-  justify-content: center;
+  min-height: 56px;
+
+  @media (min-width: 768px) {
+    min-height: 0;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 0;
+  }
 }
 
-.main-header__button-toogle--no-js {
+.main-header__button-toogle {
+  background-color: transparent;
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: 17px;
+  right: 17px;
+  z-index: 2;
+  display: block;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.main-header__button-toogle--closed {
+  width: 22px;
+  height: 22px;
+  background-color: #ffffff;
+  background-image: url("../img/icon-menu.svg");
 
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.main-header__button-toogle--opened {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-header__button-toogle--no-js {
+  display: none;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
 }
