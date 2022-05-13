@@ -63,8 +63,6 @@ img {
 }
 .main-header {
   display: block;
-  width: 320px;
-  min-height: 56px;
   background-color: #ffffff;
 }
 @media (min-width: 768px) {
@@ -73,9 +71,20 @@ img {
   }
 }
 .main-header__button {
-  min-height: 56%;
+  min-height: 56px;
+}
+@media (min-width: 768px) {
+  .main-header__button {
+    min-height: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .main-header__button {
+    min-height: 0;
+  }
 }
 .main-header__button-toogle {
+  background-color: transparent;
   position: absolute;
   top: 17px;
   right: 17px;
@@ -99,7 +108,6 @@ img {
 .main-header__button-toogle--opened {
   width: 22px;
   height: 22px;
-  background-color: #81b3d2;
   background-image: url("../img/icon-cross.svg");
 }
 @media (min-width: 768px) {
@@ -140,7 +148,7 @@ img {
 }
 @media (min-width: 768px) {
   .main-nav__item {
-    width: 17%;
+    width: 18%;
     background-color: transparent;
   }
   .main-nav__item:nth-child(2) {
@@ -177,7 +185,7 @@ img {
     display: flex;
   }
 }
-.main-nav__opened {
+.main-nav--opened {
   position: absolute;
   width: 100%;
   top: 0;
@@ -185,7 +193,7 @@ img {
   z-index: 1;
 }
 @media (min-width: 768px) {
-  .main-nav__opened {
+  .main-nav--opened {
     position: static;
     margin: 0;
     padding: 0;
@@ -411,7 +419,7 @@ img {
 }
 .main-footer {
   display: block;
-  padding: 45px;
+  padding: 38px 78px 22px 86px;
 }
 @media (min-width: 768px) {
   .main-footer {
@@ -419,12 +427,21 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 36px 42px 36px 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer {
+    padding: 36px 120px 36px 104px;
   }
 }
 .main-footer__hashtag {
+  display: flex;
+  justify-content: center;
   color: #000000;
   font-size: 21px;
   line-height: 26px;
+  align-content: center;
   text-decoration: none;
 }
 .social__item {
@@ -446,6 +463,11 @@ img {
   width: 48px;
   height: 48px;
   background-color: #81b3d2;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  margin-top: 36px;
+  margin-bottom: 37px;
 }
 .social__link--vkontakte {
   background-image: url("../img/social-vkontakte.svg");
@@ -457,11 +479,15 @@ img {
   background-image: url("../img/social-youtube.svg");
 }
 .copyright__text {
+  display: flex;
   font-weight: 400;
   text-transform: uppercase;
+  justify-content: space-around;
   align-items: center;
-  width: 121px;
+  width: 154px;
+  color: #000000;
   margin: 0 auto;
+  text-decoration: none;
 }
 .gallery__item {
   list-style: none;
