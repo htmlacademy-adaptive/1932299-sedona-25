@@ -1,15 +1,40 @@
+.gallery__list {
+  margin: 0;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .gallery__item {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .gallery__item-title {
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .gallery__item-like-amount {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.gallery__item-image--current {
+  width: 648px;
 }
