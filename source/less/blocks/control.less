@@ -23,11 +23,11 @@
   margin: 0;
 }
 
-.control-input[type="radio"]+.control-mark {
+.control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked+.control-mark::before {
+.control-input[type="radio"]:checked + .control-mark::before {
   position: absolute;
   top: 15px;
   left: 16px;
@@ -38,13 +38,13 @@
   content: "";
 }
 
-.control-input[input="checkbox"]:checked+.control-mark {
+.control-input[input="checkbox"]:checked + .control-mark {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.control-input[type="checkbox"]:checked+.control-mark::before {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 26px;
   left: 11px;
@@ -55,7 +55,7 @@
   transform: rotate(45deg);
 }
 
-.control-input[type="checkbox"]:checked+.control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   top: 22px;
   left: 17px;
