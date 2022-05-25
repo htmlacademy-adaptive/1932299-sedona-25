@@ -9,29 +9,30 @@
 </head>
 
 <body class="page-body">
+  <div class="page-container">
   <div class="main-header__button">
     <button class="main-header__button-toogle main-header__button-toogle--closed" type="button">
       <span class="visually-hidden">Открыть меню.</span>
     </button>
     <a class="main-header__logo">
-      <img src="img/mobile-logo.svg" width="185" height="96" alt="Логотип">
+      <img src="img/mobile-logo.svg" width="185" height="96" alt="Логотип" href="http://localhost:3000/">
     </a>
   </div>
   <nav class="main-header__main-nav main-nav--closed">
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__item-link" href="#">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link">Фото и видео</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link">Форма отзыва</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link">HTML academy</a>
-        </li>
-      </ul>
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item--current">
+        <a class="main-nav__item-link" href="http://localhost:3000/">Главная</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="http://localhost:3000/catalog.html">Фото и видео</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="http://localhost:3000/form.html">Форма отзыва</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+      </li>
+    </ul>
   </nav>
   </header>
   <main class="main-container">
@@ -67,11 +68,15 @@
           <legend class="form__title form__title--information">Контактная информация:</legend>
           <p class="form__wrapper">
             <label class="form__label" for="contact">Контактный телефон*:</label>
+            <div class="form__phone-number">
             <input class="form__field" type="tel" id="contact" name="contact" placeholder="Введите телефон">
+            </div>
           </p>
           <p class="form__wrapper">
             <label class="form__label" for="email">Электронная почта*:</label>
+            <div class="form__mail">
             <input class="form__field" type="email" id="email" name="email" placeholder="Введите e-mail">
+          </div>
           </p>
         </fieldset>
       </div>
@@ -155,7 +160,10 @@
           <label class="form__description-title" for="text-field">Опишите свои эмоции:</label>
           <textarea class="form__description-field" placeholder="Опишите подробно все свои восторги" name="text-field"
             id="text-field"></textarea>
-        <button class="form__button" type="submit">Отправить отзыв</button>
+        </div>
+        <div class="form__button-review">
+          <button class="form__button" type="submit">Отправить отзыв</button>
+          <span class="form__obligatory-field">*-Обязательные поля</span>
       </div>
       </form>
     </section>
@@ -187,6 +195,7 @@
         </a>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>
