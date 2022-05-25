@@ -33,8 +33,11 @@
   }
 
   @media (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 66px;
+    align-items: center;
+    border: none;
   }
 }
 
@@ -50,6 +53,7 @@
 .form__label {
   font-weight: 400;
   text-transform: uppercase;
+  display: block;
 }
 
 .form__title {
@@ -115,28 +119,40 @@
   }
 }
 
+.form__phone-number {
+  position: relative;
+}
+
 .form__phone-number::before {
   content: "";
   display: block;
-  position: relative;
-  width: 18px;
-  height: 18px;
-  top: 40px;
-  left: 90%;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 0;
+  right: 0;
   background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e6e6e6;
+}
+
+.form__mail {
+  position: relative;
 }
 
 .form__mail::before {
   content: "";
   display: block;
-  position: relative;
-  width: 18px;
-  height: 18px;
-  top: 40px;
-  left: 90%;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 0;
+  right: 0;
   background-image: url("../img/mail.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-color: #e6e6e6;
 }
 
 .form__impression {
@@ -196,7 +212,12 @@ input::placeholder {
 }
 
 .form__description {
+  margin: 0;
   padding: 0;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 24px;
 
   @media (min-width: 768px) {
     padding-left: 60px;
@@ -204,8 +225,8 @@ input::placeholder {
   }
 
   @media (min-width: 1200px) {
-    padding-left: 216px;
-    padding-right: 216px;
+    padding-left: 96px;
+    padding-right: 96px;
   }
 }
 
@@ -217,7 +238,6 @@ input::placeholder {
   min-height: 150px;
   border: none;
   margin: 0;
-  margin-bottom: 40px;
 
   @media (min-width: 768px) {
     min-height: 160px;
@@ -238,7 +258,6 @@ input::placeholder {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  padding-top: 24px;
 }
 
 .form__button {
@@ -255,5 +274,44 @@ input::placeholder {
 
   @media (min-width: 768px) {
     width: 384px;
+    margin: 0;
+  }
+}
+
+.form__button-review {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: #33333399;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+
+.form__obligatory-field {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
   }
 }

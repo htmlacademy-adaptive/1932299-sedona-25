@@ -9,29 +9,30 @@
 </head>
 
 <body class="page-body">
+  <div class="page-container">
   <div class="main-header__button">
     <button class="main-header__button-toogle main-header__button-toogle--closed" type="button">
       <span class="visually-hidden">Открыть меню.</span>
     </button>
     <a class="main-header__logo">
-      <img src="img/mobile-logo.svg" width="185" height="96" alt="Логотип">
+      <img src="img/mobile-logo.svg" width="185" height="96" alt="Логотип" href="http://localhost:3000/">
     </a>
   </div>
   <nav class="main-header__main-nav main-nav--closed">
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__item-link" href="#">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link">Фото и видео</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link">Форма отзыва</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__item-link">HTML academy</a>
-        </li>
-      </ul>
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item--current">
+        <a class="main-nav__item-link" href="http://localhost:3000/">Главная</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="http://localhost:3000/catalog.html">Фото и видео</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="http://localhost:3000/form.html">Форма отзыва</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+      </li>
+    </ul>
   </nav>
   </header>
   <main class="main-container">
@@ -49,58 +50,72 @@
     </section>
     <section class="main-container__gallery gallery">
       <h2 class="visually-hidden">Галерея</h2>
-      <div class="gallery__wrapper">
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img class="gallery__item-image--current" src="img/photo1-mobile.jpg" width="280" height="280"
-              alt="Неродные просторы" />
+            <a class="gallery__item-link" href="img/photo1-mobile.jpg"><img class="gallery__item-image--current" src="img/photo1-mobile.jpg" width="280" height="280"
+              alt="Неродные просторы" /></a>
+              <div class="gallery__wrapper">
+              <div class="gallery__authorship">
             <h3 class="gallery__item-title">Неродные просторы</h3>
-            <div class="gallery__authorship">
             <span class="gallery__item-author">Автор фото: Борис</span>
+            </div>
             <div class="gallery__item-like">
-              <img class="gallery__item-like-icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк" />
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">лайк.</span>
+              </button>
               <span class="gallery__item-like-amount">1350</span>
             </div>
-          </div>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__item-image" src="img/photo2-mobile.jpg" width="280" height="280"
-              alt="Местная растительность" />
+            <a class="gallery__item-link" href="img/photo2-mobile.jpg"><img class="gallery__item-image" src="img/photo2-mobile.jpg" width="280" height="280"
+              alt="Местная растительность" /></a>
+              <div class="gallery__wrapper">
+              <div class="gallery__authorship">
             <h3 class="gallery__item-title">Местная растительность</h3>
-            <div class="gallery__authorship">
             <span class="gallery__item-author">Автор фото: Сергей</span>
+            </div>
             <div class="gallery__item-like">
-              <img class="gallery__item-like-icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк" />
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">лайк.</span>
+              </button>
               <span class="gallery__item-like-amount">143</span>
             </div>
-          </div>
+            </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__item-image" src="img/photo3-mobile.jpg" width="280" height="280"
-              alt="Дорога на север" />
+            <a class="gallery__item-link" href="img/photo3-mobile.jpg"><img class="gallery__item-image" src="img/photo3-mobile.jpg" width="280" height="280"
+              alt="Дорога на север" /></a>
+              <div class="gallery__wrapper">
+              <div class="gallery__authorship">
             <h3 class="gallery__item-title">Дорога на север</h3>
-            <div class="gallery__authorship">
             <span class="gallery__item-author">Автор фото: Петр</span>
+            </div>
             <div class="gallery__item-like">
-              <img class="gallery__item-like-icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк" />
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">лайк.</span>
+              </button>
               <span class="gallery__item-like-amount">96</span>
             </div>
           </div>
           </li>
           <li class="gallery__item">
-            <img class="gallery__item-image" src="img/photo4-mobile.jpg" width="280" height="280"
-              alt="Мост дьявола" />
+            <a class="gallery__item-link" href="img/photo4-mobile.jpg"><img class="gallery__item-image" src="img/photo4-mobile.jpg" width="280" height="280"
+              alt="Мост дьявола" /></a>
+              <div class="gallery__wrapper">
+              <div class="gallery__authorship">
             <h3 class="gallery__item-title">Мост дьявола</h3>
-            <div class="gallery__authorship">
             <span class="gallery__item-author">Автор фото: Антон</span>
+            </div>
             <div class="gallery__item-like">
-              <img class="gallery__item-like-icon" src="img/like-icon.svg" width="23" height="21" alt="Лайк" />
+              <button class="gallery__button" type="button">
+                <span class="visually-hidden">лайк.</span>
+              </button>
               <span class="gallery__item-like-amount">254</span>
             </div>
-          </div>
+            </div>
           </li>
         </ul>
-      </div>
     </section>
     <section class="main-container__video video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
@@ -142,6 +157,7 @@
         </a>
     </div>
   </footer>
+  </div>
 </body>
 
 </html>

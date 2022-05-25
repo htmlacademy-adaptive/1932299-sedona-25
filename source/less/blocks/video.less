@@ -43,14 +43,23 @@
   width: 100%;
 }
 
-.video__button::before {
+.video__link {
+  position: relative;
+}
+
+.video__button {
+  content: "";
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
-  content: "";
   display: block;
-  position: relative;
-  width: 48px;
-  height: 54px;
-  bottom: 120px;
-  left: 300%;
+  position: absolute;
+  width: 53px;
+  height: 59px;
+  bottom: 50%;
+  right: 50%;
+  padding: 5px;
+  background-color: transparent;
+  background-position: center;
+  border: none;
+  cursor: pointer;
 }
